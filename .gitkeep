@@ -1,0 +1,5 @@
+const gitkeepPath = path.join(UPLOAD_DIR, '.gitkeep');
+if (!fs.existsSync(gitkeepPath)) {
+  fs.writeFileSync(gitkeepPath, '');
+  console.log(`Created .gitkeep file in: ${UPLOAD_DIR}`);
+}
